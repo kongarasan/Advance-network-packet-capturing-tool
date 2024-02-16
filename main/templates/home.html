@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Selector</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            background-image: linear-gradient(180deg, black, #34c4ce);
+            color: white;
+            text-align: center;
+            margin: 0;
+            height: 800px;
+            width: 100%;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 10px;
+            padding: 100px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            width: 50rem;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        a:hover {
+            background-color: #34c4ce;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Packet Capturing Tool !!</h1>
+    <ul>
+        <li><a href="{{ url_for('port_scanner') }}" target="_blank">Launch Port Scanner  </a></li>
+        <li><a href="{{ url_for('packet_sniffer') }}" target="_blank">Launch Packet Sniffer</a></li>
+    </ul>
+</body>
+</html>
